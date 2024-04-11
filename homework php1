@@ -1,4 +1,48 @@
-4번
+1번 
+<?php
+$n = 30;
+$sum = 0;
+$prod = 1;
+
+for($i=1; $i<=$n; $i++) {
+    echo $i . " ";
+    $sum += $i;
+    $prod *= $i;
+}
+
+echo "<br>";
+echo "1 + ... + 30 = " . $sum . "<br>";
+echo "1 * ... * 30 = " . $prod;
+?>
+ 
+ ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+ 2번
+ <?php
+$n = 30;
+$data = array();
+
+// 랜덤 숫자 생성
+for($i = 0; $i < $n; $i++) {
+    $data[$i] = rand(10, 100);
+}
+
+echo "생성된 랜덤 숫자: ";
+foreach ($data as $value) {
+    echo $value . " ";
+}
+echo "<br>";
+
+// 배열 정렬
+sort($data);
+
+echo "올림차순으로 정렬된 숫자: ";
+foreach ($data as $value) {
+    echo $value . " ";
+}
+?>
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+ 4번
 <!DOCTYPE html>
 <html>
 <head>
@@ -177,8 +221,5 @@ else {
 ?>
 </body>
 </html>
-
-
-
 
 
