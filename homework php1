@@ -43,6 +43,28 @@ function printFibonacciSequence($n) {
         echo "$i\t$fi\t$fi1\t$fiRatio\n";
     }
 }
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+3번번
+<?php
+function fibonacci($n) {
+    $fib = array(0, 1);
+    for ($i = 2; $i < $n; $i++) {
+        $fib[$i] = $fib[$i - 1] + $fib[$i - 2];
+    }
+    return $fib;
+}
+
+function printFibonacciSequence($n) {
+    $fibSequence = fibonacci($n);
+    echo "i\tfi\tfi+1\t/fi\n";
+    for ($i = 0; $i < $n; $i++) {
+        $fi = $fibSequence[$i];
+        $fi1 = isset($fibSequence[$i + 1]) ? $fibSequence[$i + 1] : '';
+        $fiRatio = ($fi1 != '') ? $fi1 / $fi : '';
+        echo "$i\t$fi\t$fi1\t$fiRatio\n";
+    }
+}
+
 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 4번
 <!DOCTYPE html>
