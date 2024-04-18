@@ -44,7 +44,7 @@ function printFibonacciSequence($n) {
     }
 }
 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-3번번
+3번
 <?php
 function fibonacci($n) {
     $fib = array(0, 1);
